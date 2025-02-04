@@ -31,9 +31,6 @@ int64_t turn_off_led_green_callback(alarm_id_t id, void *user_data) {
 
 int main()
 {
-// permite comuniação serial e uso de printf
-    stdio_init_all();
-
  // inicia os pinos GPIOs dos leds
     gpio_init(led_green);
     gpio_set_dir(led_green, GPIO_OUT);
